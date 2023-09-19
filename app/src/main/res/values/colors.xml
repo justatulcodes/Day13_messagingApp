@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primar_blue">#2b4ba3</color>
+    <color name="secondary_surface_color">#abbbea</color>
+    <color name="chat_box_recieved_bg">#ecf4ff</color>
+    <color name="chat_box_sent_bg">#f6f8fd</color>
+    <color name="send_icon_color">#465ffd</color>
+    <color name="unread_count_bg">#ff3a3d</color>
+    <color name="last_msg_color">#aeb4c7</color>
+    <color name="gray">#AA000000</color>
+</resources>

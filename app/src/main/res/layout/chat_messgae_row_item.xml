@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/recieved_msg_row">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/single_profile_image"
+            android:layout_width="@dimen/chat_message_profile_pic_size"
+            android:layout_height="@dimen/chat_message_profile_pic_size"
+            android:src="@drawable/p1"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            app:shapeAppearance="@style/CornerCutForMultiProfile"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chat_msg_sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_font"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/last_msg_color"
+                android:textSize="@dimen/chat_message_sender_name_text_size"
+                tools:text="Samantha" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                style="@style/recievedMessageBoxStyle"
+                android:backgroundTint="@color/chat_box_recieved_bg">
+
+                <TextView
+                    android:id="@+id/recieved_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_font"
+                    android:padding="15dp"
+                    android:text="@string/sample_text"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recieved_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/main_font"
+            android:gravity="bottom"
+            android:textColor="@color/last_msg_color"
+            android:textSize="@dimen/last_msg_time_text_size"
+            tools:text="12:33" />
+
+        <Space
+            android:layout_width="@dimen/chat_box_side_spacing"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/sent_msg_row"
+        android:visibility="visible">
+
+        <Space
+            android:layout_width="@dimen/chat_box_side_spacing"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/sent_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/main_font"
+            android:gravity="bottom"
+            android:textColor="@color/last_msg_color"
+            android:textSize="@dimen/last_msg_time_text_size"
+            tools:text="12:33" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                style="@style/sentMessageBoxStyle"
+                android:backgroundTint="@color/chat_box_sent_bg">
+
+                <TextView
+                    android:id="@+id/sent_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_font"
+                    android:padding="15dp"
+                    android:text="@string/sample_text"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

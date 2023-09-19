@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Day13_messagingApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <style name="Theme.Day13_messagingApp" parent="Base.Theme.Day13_messagingApp" />
+    <style name="CornerCut" parent="">
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeBottomLeft">@dimen/chat_itemview_profile_roundness</item>
+        <item name="cornerSizeBottomRight">@dimen/chat_itemview_profile_roundness</item>
+        <item name="cornerSizeTopLeft">@dimen/chat_itemview_profile_roundness</item>
+        <item name="cornerSizeTopRight">@dimen/chat_itemview_profile_roundness</item>
+    </style>
+
+    <style name="CornerCutForMultiProfile" parent="">
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeBottomLeft">@dimen/chat_itemview_multi_profile_roundness</item>
+        <item name="cornerSizeBottomRight">@dimen/chat_itemview_multi_profile_roundness</item>
+        <item name="cornerSizeTopLeft">@dimen/chat_itemview_multi_profile_roundness</item>
+        <item name="cornerSizeTopRight">@dimen/chat_itemview_multi_profile_roundness</item>
+    </style>
+
+    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/chat_view_corner_radius</item>
+        <item name="cornerSizeTopLeft">@dimen/chat_view_corner_radius</item>
+    </style>
+
+
+    <style name="recievedMessageBoxStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_message_box_style</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_message_box_style" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomRight">@dimen/message_box_radius</item>
+        <item name="cornerSizeTopRight">@dimen/message_box_radius</item>
+        <item name="cornerSizeTopLeft">@dimen/message_box_radius</item>
+    </style>
+
+
+    <style name="sentMessageBoxStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_sent_message_box_style</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_sent_message_box_style" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">@dimen/message_box_radius</item>
+        <item name="cornerSizeTopRight">@dimen/message_box_radius</item>
+        <item name="cornerSizeTopLeft">@dimen/message_box_radius</item>
+    </style>
+
+
+    <dimen name="chat_itemview_profile_roundness">20dp</dimen>
+    <dimen name="chat_itemview_multi_profile_roundness">10dp</dimen>
+    <dimen name="chat_view_corner_radius">60dp</dimen>
+    <dimen name="message_box_radius">30dp</dimen>
+
+</resources>
